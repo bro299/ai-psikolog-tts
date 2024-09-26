@@ -186,7 +186,7 @@
             messageElement.innerHTML = `
                 <span class="font-bold ${sender === 'Anda' ? 'text-purple-600' : 'text-pink-600'}">${sender}:</span>
                 <p class="inline-block bg-gradient-to-r ${sender === 'Anda' ? 'from-purple-100 to-pink-100' : 'from-pink-100 to-purple-100'} rounded-lg px-4 py-2 shadow">${text}</p>
-                ${withTTS ? `<button onclick="playTTS('${text}')" class="mt-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600">Play TTS</button>` : ''}
+                ${withTTS ? `<button onclick="🔊('${text}')" class="mt-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600">Play TTS</button>` : ''}
             `;
             chatHistory.appendChild(messageElement);
             chatHistory.scrollTop = chatHistory.scrollHeight;
